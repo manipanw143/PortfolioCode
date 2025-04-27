@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
+import myimage from '../image/image.jpeg';
 
 const skills = [
   { name: "React.js", percentage: 95 },
@@ -78,7 +79,7 @@ export default function AboutSection() {
             <div className="relative">
               <div className="absolute inset-0 rounded-lg bg-primary-200 dark:bg-primary-900/30 blur-md transform rotate-3" />
               <img
-                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8cGVyc29ufHx8fHx8MTY4NDc5MjQ2MA&ixlib=rb-4.0.3&q=80&w=500"
+                src={myimage}
                 alt="Alex Johnson"
                 className="relative z-10 w-full h-auto rounded-lg shadow-lg object-cover"
               />
@@ -103,11 +104,8 @@ export default function AboutSection() {
               className="text-gray-600 dark:text-gray-400 mb-6"
               variants={itemVariants}
             >
-              I'm a Full Stack Developer with over 5 years of experience building
-              web applications and digital products. My journey in tech began
-              with a degree in Computer Science from Boston University, followed
-              by roles at various tech companies ranging from startups to
-              enterprise organizations.
+              I am a software developer with two years of experience in building high-performance web applications and React Native Android applications. My expertise includes React.js, React Native, JavaScript, and Java, through which I create scalable solutions with efficient coding, robust unit testing, and quality assurance.
+              Additionally, I have designed scalable APIs using Strapi and managed databases such as PostgreSQL and MySQL. I am adaptable and eager to tackle new projects, thriving on challenges.
             </motion.p>
             <motion.p
               className="text-gray-600 dark:text-gray-400 mb-8"
@@ -115,8 +113,7 @@ export default function AboutSection() {
             >
               I'm passionate about creating intuitive, performant user
               experiences and solving complex problems with clean, maintainable
-              code. When I'm not coding, you'll find me hiking, reading sci-fi
-              novels, or experimenting with new technologies.
+              code.
             </motion.p>
 
             {/* Skills */}

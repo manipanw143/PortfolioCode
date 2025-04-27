@@ -58,7 +58,7 @@ export default function Header() {
           transition={{ duration: 0.5 }}
         >
           <span className="font-mono">{"<"}</span>
-          AJ
+           Manish Panwar
           <span className="font-mono">{"/"}</span>
           <span className="font-mono">{">"}</span>
         </motion.a>

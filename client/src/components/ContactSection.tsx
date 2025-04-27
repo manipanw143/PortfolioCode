@@ -202,7 +202,7 @@ export default function ContactSection() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-md shadow-md hover:shadow-lg transition w-full md:w-auto"
+                   className="px-6 py-3 bg-transparent border border-primary-600 dark:border-primary-400 text-primary-600 dark:text-primary-400 rounded-md hover:bg-primary-50 dark:hover:bg-gray-800 transition"
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}{" "}
                   <Mail className="ml-2 h-5 w-5" />
