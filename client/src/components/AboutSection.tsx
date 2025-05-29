@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import useScrollAnimation from "@/hooks/useScrollAnimation";
-import myimage from '../image/image.jpeg';
+// import useScrollAnimation from "@/hooks/useScrollAnimation";
+import useScrollAnimation from "../hooks/useScrollAnimation";
+import myimage from '../image/image.png';
 
 const skills = [
   { name: "React.js", percentage: 95 },
@@ -25,7 +26,7 @@ const techBadges = [
 
 export default function AboutSection() {
   const [headingRef, headingVisible] = useScrollAnimation();
-  const [bioRef, bioVisible] = useScrollAnimation();
+  const [bioRef, bioVisible] = useScrollAnimation(); 
   const [photoRef, photoVisible] = useScrollAnimation();
   const [skillsRef, skillsVisible] = useScrollAnimation();
   const [badgesRef, badgesVisible] = useScrollAnimation();

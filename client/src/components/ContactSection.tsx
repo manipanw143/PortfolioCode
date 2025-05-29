@@ -1,21 +1,22 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import useScrollAnimation from "@/hooks/useScrollAnimation";
+// import useScrollAnimation from "@/hooks/useScrollAnimation";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { useToast } from "@/hooks/use-toast";
+// import { useToast } from "@/hooks/use-toast";
 import {
   Form,
   FormControl,
   FormField,
-  FormItem,
+  FormItem,   
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
+} from "../components/ui/form";
+import { Input } from "../components/ui/input";
+import { Textarea } from "../components/ui/textarea";
+import { Button } from "../components/ui/button";
+import { useToast } from "../hooks/use-toast";
 import {
   Mail,
   MapPin,
@@ -25,6 +26,7 @@ import {
   Twitter,
   Download,
 } from "lucide-react";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters" }),
@@ -239,7 +241,7 @@ export default function ContactSection() {
                       href="mailto:alex@example.com"
                       className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition"
                     >
-                      alex@example.com
+                      movi@gmail.com
                     </a>
                   </div>
                 </div>
@@ -253,7 +255,7 @@ export default function ContactSection() {
                       Location
                     </h4>
                     <p className="text-gray-600 dark:text-gray-400">
-                      San Francisco, California
+                      Bangalore
                     </p>
                   </div>
                 </div>

@@ -16,7 +16,7 @@ export default function Footer() {
               className="text-xl font-bold text-primary-600 dark:text-primary-400"
             >
               <span className="font-mono">{"<"}</span>
-              AJ
+              MP
               <span className="font-mono">{"/"}</span>
               <span className="font-mono">{">"}</span>
             </a>
@@ -24,7 +24,7 @@ export default function Footer() {
 
           <div className="text-center md:text-right">
             <p className="text-gray-600 dark:text-gray-400">
-              © {new Date().getFullYear()} Alex Johnson. All rights reserved.
+              © {new Date().getFullYear()} Manish. All rights reserved.
             </p>
             <p className="text-gray-500 dark:text-gray-500 text-sm mt-1">
               Built with React, Tailwind CSS, and Framer Motion
